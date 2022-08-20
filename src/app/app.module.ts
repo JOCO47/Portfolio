@@ -10,6 +10,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HsskillsComponent} from './components/hsskills/hsskills.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { EducacionComponent } from './components/educacion/educacion.component';
     BannerComponent,
     AcercadeComponent,
     ExperienciaComponent,
-    EducacionComponent
+    EducacionComponent,
+    HsskillsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
