@@ -1,5 +1,7 @@
 .row{
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 div{
     color: white;
@@ -13,7 +15,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 3%;
-        top: 350px;
+        top: 300px;
     }
 }
 
@@ -33,4 +35,9 @@ div{
     font-weight: bold;
     margin-top: 40%;
     margin-left: 10px;
+}
+span{
+    padding: 20px;
+    text-align: justify;
+    display: flex;
 }
