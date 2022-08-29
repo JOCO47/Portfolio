@@ -12,5 +12,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_JORGE_ORQUERA }}'
-          projectId: portfolio-jorge-orquera
+          firebaseServiceAccount: >-
+            ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_JORGE_ORQUERA_DE1A8
+            }}
+          projectId: portfolio-jorge-orquera-de1a8
