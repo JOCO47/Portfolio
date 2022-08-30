@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ExperienciaService } from 'src/app/service/experiencia.service';
@@ -36,6 +37,10 @@ export class ExperienciaComponent implements OnInit {
         }, err => {
           alert("No se pudo eliminar");
         })
+  }
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.expe, event.previousIndex, event.currentIndex);
   }
 }
 

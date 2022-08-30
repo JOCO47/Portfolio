@@ -6,9 +6,9 @@
     
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-    <table class="table">
+    <table class="table" cdkDropList (cdkDropListDropped)="drop($event)">
         <tbody>
-            <tr *ngFor="let Experiencia of expe">
+            <tr *ngFor="let Experiencia of expe" cdkDrag>
                 <td><h2>{{Experiencia.nombreE}}</h2></td>
                 <td>{{Experiencia.descripcionE}}</td>
                 <td *ngIf="isLogged">

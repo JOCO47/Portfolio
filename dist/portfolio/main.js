@@ -84,6 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 7727);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header.component */ 3646);
@@ -130,6 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
@@ -140,7 +142,8 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵ�
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         ng_circle_progress__WEBPACK_IMPORTED_MODULE_20__.NgCircleProgressModule.forRoot({}),
         _angular_common_http__WEBPACK_IMPORTED_MODULE_21__.HttpClientModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule] });
+        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule,
+        _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_23__.DragDropModule] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
         _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__.HeaderComponent,
         _components_logo_ap_logo_ap_component__WEBPACK_IMPORTED_MODULE_3__.LogoAPComponent,
@@ -158,7 +161,8 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵ�
         _components_educacion_new_educacion_component__WEBPACK_IMPORTED_MODULE_16__.NewEducacionComponent,
         _components_educacion_edit_educacion_component__WEBPACK_IMPORTED_MODULE_17__.EditEducacionComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, ng_circle_progress__WEBPACK_IMPORTED_MODULE_20__.NgCircleProgressModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_21__.HttpClientModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule] }); })();
+        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule,
+        _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_23__.DragDropModule] }); })();
 
 
 /***/ }),
