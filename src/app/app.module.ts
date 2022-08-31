@@ -23,6 +23,8 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { CdkTableModule } from '@angular/cdk/table';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { interceptorSpinnerProvider } from './service/interceptor-spinner.service';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { CdkTableModule } from '@angular/cdk/table';
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { CdkTableModule } from '@angular/cdk/table';
     CdkTableModule
   ],
   providers: [
-    interceptorProvider
+    interceptorProvider,
+    interceptorSpinnerProvider
   ],
   bootstrap: [AppComponent]
 })

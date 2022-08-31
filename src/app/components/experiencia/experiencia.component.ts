@@ -39,9 +39,9 @@ export class ExperienciaComponent implements OnInit {
         })
   }
 
-  drop(event: CdkDragDrop<Experiencia[]>) {
+  drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.expe, event.previousIndex, event.currentIndex);
+    this.expe = [...this.expe];
   }
 }
-
 

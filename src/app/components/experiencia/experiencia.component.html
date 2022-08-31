@@ -8,13 +8,13 @@
 
   <div class="col-lg-1"></div>
   <div class="col-lg-11">
-    <table cdk-table [dataSource]="expe" cdkDropList (cdkDropListDropped)="drop($event)" >
+    <table cdk-table cdkDropList (cdkDropListDropped)="drop($event)" [dataSource]="expe" >
       <ng-container cdkColumnDef="nombre">
-        <td cdk-cell *cdkCellDef="let Experiencia"> {{ Experiencia.nombreE }} </td>
+        <td cdk-cell *cdkCellDef="let Experiencia"> <h2>{{ Experiencia.nombreE }}</h2> </td>
       </ng-container>
 
       <ng-container cdkColumnDef="experiencia">
-        <td cdk-cell *cdkCellDef="let Experiencia"> {{ Experiencia.descripcionE }} </td>
+        <td cdk-cell *cdkCellDef="let Experiencia"> <h3>{{ Experiencia.descripcionE }}</h3> </td>
       </ng-container>
 
       <ng-container cdkColumnDef="editar">
