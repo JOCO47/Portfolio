@@ -10,7 +10,7 @@
   <div class="col-lg-11">
     <table cdk-table cdkDropList (cdkDropListDropped)="drop($event)" [dataSource]="expe">
 
-      <ng-container cdkColumnDef="handle">
+      <ng-container cdkColumnDef="handle" cdkDragHandle>
         <td cdk-cell *cdkCellDef="let Experiencia">
           <i class="bi bi-justify"></i>
         </td>
