@@ -899,7 +899,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "HomeComponent": () => (/* binding */ HomeComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../header/header.component */ 3646);
 /* harmony import */ var _acercade_acercade_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../acercade/acercade.component */ 3266);
 /* harmony import */ var _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../experiencia/experiencia.component */ 3605);
@@ -907,8 +907,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hsskills_hsskills_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../hsskills/hsskills.component */ 3651);
 /* harmony import */ var _proyectos_proyectos_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../proyectos/proyectos.component */ 3171);
 /* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../footer/footer.component */ 4662);
-/* harmony import */ var _spinner_spinner_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../spinner/spinner.component */ 4132);
-
 
 
 
@@ -923,9 +921,9 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 8, vars: 0, template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelement"](0, "app-header")(1, "app-acercade")(2, "app-experiencia")(3, "app-educacion")(4, "app-hsskills")(5, "app-proyectos")(6, "app-footer")(7, "app-spinner");
-    } }, dependencies: [_header_header_component__WEBPACK_IMPORTED_MODULE_0__.HeaderComponent, _acercade_acercade_component__WEBPACK_IMPORTED_MODULE_1__.AcercadeComponent, _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_2__.ExperienciaComponent, _educacion_educacion_component__WEBPACK_IMPORTED_MODULE_3__.EducacionComponent, _hsskills_hsskills_component__WEBPACK_IMPORTED_MODULE_4__.HsskillsComponent, _proyectos_proyectos_component__WEBPACK_IMPORTED_MODULE_5__.ProyectosComponent, _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__.FooterComponent, _spinner_spinner_component__WEBPACK_IMPORTED_MODULE_7__.SpinnerComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJob21lLmNvbXBvbmVudC5jc3MifQ== */"] });
+HomeComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 7, vars: 0, template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](0, "app-header")(1, "app-acercade")(2, "app-experiencia")(3, "app-educacion")(4, "app-hsskills")(5, "app-proyectos")(6, "app-footer");
+    } }, dependencies: [_header_header_component__WEBPACK_IMPORTED_MODULE_0__.HeaderComponent, _acercade_acercade_component__WEBPACK_IMPORTED_MODULE_1__.AcercadeComponent, _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_2__.ExperienciaComponent, _educacion_educacion_component__WEBPACK_IMPORTED_MODULE_3__.EducacionComponent, _hsskills_hsskills_component__WEBPACK_IMPORTED_MODULE_4__.HsskillsComponent, _proyectos_proyectos_component__WEBPACK_IMPORTED_MODULE_5__.ProyectosComponent, _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__.FooterComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJob21lLmNvbXBvbmVudC5jc3MifQ== */"] });
 
 
 /***/ }),
