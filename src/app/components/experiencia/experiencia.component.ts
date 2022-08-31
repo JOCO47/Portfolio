@@ -11,7 +11,6 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = [];
-  columnasAMostrar: string[] = [];
   
   constructor(private sExperiencia: ExperienciaService, private tokenService: TokenService) { }
 
@@ -21,10 +20,8 @@ export class ExperienciaComponent implements OnInit {
     this.cargarExperiencia();
     if(this.tokenService.getToken()){
       this.isLogged = true;
-      this.columnasAMostrar = ['handle', 'nombre', 'experiencia', 'editar', 'borrar'];
     }else{
       this.isLogged = false;
-      this.columnasAMostrar = ['nombre', 'experiencia'];
     }
   }
 
