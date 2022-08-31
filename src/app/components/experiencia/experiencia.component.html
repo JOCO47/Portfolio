@@ -1,27 +1,41 @@
 <div class="row">
-    <h1>Experiencia Laboral</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Agregar Experiencia</button>
-    </div>
-    
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ng-container cdkColumnDef="nombre">
-            <td cdk-cell *cdkCellDef="let Experiencia of expe"><h2>{{Experiencia.nombreE}}</h2></td>
-        </ng-container>
-        <ng-container cdkColumnDef="experiencia">
-            <td cdk-cell *cdkCellDef="let Experiencia of expe"><h2>{{Experiencia.descripcionE}}</h2></td>
-        </ng-container>
-        <ng-container cdkColumnDef="editar">
-            <td cdk-cell *cdkCellDef="let Experiencia of expe"><button type="button" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil"></i>EDITAR</button></td>
-        </ng-container>
-        <ng-container cdkColumnDef="borrar">
-            <td cdk-cell *cdkCellDef="let Experiencia of expe"><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i>BORRAR</button></td>
-        </ng-container>
+  <h1>Experiencia Laboral</h1>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+      Agregar Experiencia
+    </button>
+  </div>
 
-        <tr cdk-row *cdkRowDef="let Experiencia; columns: ['nombre', 'experiencia', 'editar', 'borrar']"></tr>
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table cdk-table [dataSource]="expe" cdkDropList (cdkDropListDropped)="drop($event)" >
+      <ng-container cdkColumnDef="nombre">
+        <td cdk-cell *cdkCellDef="let Experiencia"> {{ Experiencia.nombreE }} </td>
+      </ng-container>
 
-    <!--<table class="table" cdkDropList (cdkDropListDropped)="drop($event)">
+      <ng-container cdkColumnDef="experiencia">
+        <td cdk-cell *cdkCellDef="let Experiencia"> {{ Experiencia.descripcionE }} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="editar">
+        <td cdk-cell *cdkCellDef="let Experiencia">
+          <button type="button" class="btn btn-light" routerLink="/editexp/{{ Experiencia.id }}" *ngIf="isLogged">
+            <i class="bi bi-pencil"></i> EDITAR
+          </button>
+        </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="borrar">
+        <td cdk-cell *cdkCellDef="let Experiencia">
+          <button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+            <i class="bi bi-trash"></i> BORRAR
+          </button>
+        </td>
+      </ng-container>
+
+      <tr cdk-row *cdkRowDef="let row; columns: ['nombre', 'experiencia', 'editar', 'borrar']" cdkDrag></tr>
+
+      <!--<table class="table" cdkDropList (cdkDropListDropped)="drop($event)">
         <tbody>
             <tr *ngFor="let Experiencia of expe" cdkDrag>
                 <td><h2>{{Experiencia.nombreE}}</h2></td>
@@ -35,5 +49,6 @@
             </tr>
         </tbody>
     </table>-->
-    </div>
+    </table>
+  </div>
 </div>

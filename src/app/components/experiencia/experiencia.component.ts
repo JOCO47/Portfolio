@@ -11,7 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = [];
-
+  
   constructor(private sExperiencia: ExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
@@ -39,7 +39,7 @@ export class ExperienciaComponent implements OnInit {
         })
   }
 
-  drop(event: CdkDragDrop<string[]>) {
+  drop(event: CdkDragDrop<Experiencia[]>) {
     moveItemInArray(this.expe, event.previousIndex, event.currentIndex);
   }
 }

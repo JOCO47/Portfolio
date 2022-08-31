@@ -22,6 +22,7 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
-    DragDropModule
+    DragDropModule,
+    CdkTableModule
   ],
   providers: [
     interceptorProvider
