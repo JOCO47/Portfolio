@@ -6,7 +6,36 @@
     
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-    <table class="table" cdkDropList (cdkDropListDropped)="drop($event)">
+        <table class="table table-striped" cdk-table cdkDropList (cdkDropListDropped)="drop($event)" [dataSource]="educacion" [cdkDropListDisabled]="!isLogged">
+            <ng-container cdkColumnDef="nombre">
+              <td cdk-cell *cdkCellDef="let Educacion"> <h2>{{ Educacion.nombreE }}</h2> </td>
+            </ng-container>
+      
+            <ng-container cdkColumnDef="Educacion">
+              <td cdk-cell *cdkCellDef="let Educacion"> <h4>{{ Educacion.descripcionE }}</h4> </td>
+            </ng-container>
+      
+            <ng-container cdkColumnDef="editar">
+              <td cdk-cell *cdkCellDef="let Educacion">
+                <button type="button" class="btn btn-light" routerLink="/editexp/{{ Educacion.id }}" *ngIf="isLogged">
+                  <i class="bi bi-pencil"></i> EDITAR
+                </button>
+              </td>
+            </ng-container>
+      
+            <ng-container cdkColumnDef="borrar">
+              <td cdk-cell *cdkCellDef="let Educacion">
+                <button type="button" class="btn btn-danger" (click)="delete(Educacion.id)" *ngIf="isLogged">
+                  <i class="bi bi-trash"></i> BORRAR
+                </button>
+              </td>
+            </ng-container>
+      
+            <tr cdk-row *cdkRowDef="let row; columns: ['nombre', 'Educacion', 'editar', 'borrar']" cdkDragLockAxis="y" cdkDrag></tr>
+                  
+          </table>
+
+    <!--<table class="table" cdkDropList (cdkDropListDropped)="drop($event)">
         <tbody>
             <tr *ngFor="let Educacion of educacion" cdkDrag>
                 <td><h2>{{Educacion.nombreE}}</h2></td>
@@ -19,6 +48,6 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table>-->
     </div>
 </div>

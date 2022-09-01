@@ -41,5 +41,6 @@ export class EducacionComponent implements OnInit {
 
   drop(event: CdkDragDrop<Educacion[]>) {
     moveItemInArray(this.educacion, event.previousIndex, event.currentIndex);
+    this.educacion = [...this.educacion];
   }
 }
