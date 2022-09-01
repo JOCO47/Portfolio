@@ -10,19 +10,11 @@ img{
     align-items: center;
     margin: 0.3em;
 }
-.redes{
-    margin-right: 0.5em;
-}
+
 .derecha{
     display: flex;
     flex-direction: row;
     margin-right: 0.5em;
-}
-.redes img{
-    margin: 0.2em;
-}
-.btn{
-    border-width: medium;
 }
 
 @media(max-width:575px){
