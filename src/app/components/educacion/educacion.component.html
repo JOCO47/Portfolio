@@ -17,7 +17,7 @@
       
             <ng-container cdkColumnDef="editar">
               <td cdk-cell *cdkCellDef="let Educacion">
-                <button type="button" class="btn btn-light" routerLink="/editexp/{{ Educacion.id }}" *ngIf="isLogged">
+                <button type="button" class="btn btn-light" routerLink="/educacion/{{ Educacion.id }}" *ngIf="isLogged">
                   <i class="bi bi-pencil"></i> EDITAR
                 </button>
               </td>
